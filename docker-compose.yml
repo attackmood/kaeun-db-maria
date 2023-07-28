@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb:latest
+    ports:
+      - "21302:20312"
+    volumes:
+       - /home/kaeun/nfs/kaeun-db-mariadb/data:/var/lib/mysql
+    env_file:
+      - ./db.env
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_bin
+      --event-scheduler=ON
+      --max-connections=16
