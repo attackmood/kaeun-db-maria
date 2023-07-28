@@ -1,1 +1,1 @@
-docker stack deploy --with-registry-auth --compose-file docker-compose.yml kaeun_db_maria
+docker stack deploy --with-registry-auth --compose-file docker-compose.yml kaeun_db

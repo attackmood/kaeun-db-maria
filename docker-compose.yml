@@ -1,11 +1,11 @@
 version: '3'
 services:
-  mariadb:
+  maria:
     image: mariadb:latest
     ports:
       - "21302:20312"
     volumes:
-       - /home/kaeun/nfs/kaeun-db-mariadb/data:/var/lib/mysql
+       - /home/kaeun/nfs/kaeun-db-maria/data:/var/lib/mysql
     env_file:
       - ./db.env
     command:
