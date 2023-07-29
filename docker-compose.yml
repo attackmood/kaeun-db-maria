@@ -12,4 +12,4 @@ services:
       --character-set-server=utf8mb4
       --collation-server=utf8mb4_bin
       --event-scheduler=ON
-      --max-connections=16
+      --max-connections=512
